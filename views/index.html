@@ -1,0 +1,38 @@
+  <div class="alert alert-dismissible" ng-show="msg" ng-class="msg.status === 200 ? 'alert-success' : 'alert-warning'" role="alert" style="margin: 30px;">
+    {{ msg.data }}
+     <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+  </div>
+  <div class="row">
+    <div class="col-lg-8">
+      <h2>Boas vindas</h2>
+      <p>Sejam bem vindos ao Sistema de Cadastramento de Alunos da palestra de Rafael França (a.k.a. euconectei).</p>
+      <p>Por favor, somente se cadastre uma vez e aguarde novas instruções.</p>
+      <p>
+        Obrigado,
+        <br>
+        Rafael França.
+      </p>
+    </div>
+    <div class="col-lg-4">
+      <h2>Dados do Aluno</h2>
+      <form action="#">
+        <fieldset>
+          <div class="form-group">
+            <label for="nome">Nome</label>
+            <input type="text" class="form-control" id="nome" placeholder="Nome" ng-model="nome">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Email" ng-model="email">
+          </div>
+          <div class="form-group">
+            <label for="turma">Turma</label>
+            <input type="text" class="form-control" id="turma" placeholder="Turma" ng-model="turma">
+          </div>
+          <div class="text-right">
+            <input type="button" class="btn btn-primary" value="Enviar" ng-click="cadastraAluno()">
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </div>

@@ -1,0 +1,23 @@
+{
+  "predef": [
+      "__filename",
+      "__dirname",
+      "angular"
+      "app",
+      "console",
+      "exports",
+      "global",
+      "module",
+      "process",
+      "require"
+  ],
+  "browser" : false,
+  "devel" : false,
+  "es5" : false,
+  "indent": 2,
+  "onvar" : true,
+  "plusplus": true,
+  "rhino" : false,
+  "widget": false,
+  "windows" : false
+}
