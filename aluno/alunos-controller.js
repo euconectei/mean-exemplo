@@ -1,7 +1,7 @@
 app.controller('AlunosController', function ($scope, $http) {
   'use strict';
 
-  var url = 'http://localhost:3000/api/aluno';
+  var url = '../api/aluno';
 
   $http.get(url)
     .success(function (data) {

@@ -1,6 +1,6 @@
 app.controller('AlunoController', function ($scope, $http) {
 
-  var url = 'http://localhost:3000/api/aluno';
+  var url = '../api/aluno';
 
   $scope.aluno = function () {
 
@@ -15,7 +15,7 @@ app.controller('AlunoController', function ($scope, $http) {
   };
 
   $scope.cadastraAluno = function () {
-    var url = 'http://localhost:3000/api/aluno',
+    var url = '../api/aluno',
       data = {
         nome: $scope.nome,
         email: $scope.email,
