@@ -1,3 +1,5 @@
+'use strict';
+
 var express = require('express'),
   bodyParser = require('body-parser'),
   cors = require('cors'),
@@ -7,8 +9,10 @@ app.use(cors())
   .use(bodyParser.json())
   .use(bodyParser.urlencoded( { extended: true }));
 
+app.use('/assets', express.static('assets'));
+
 var Controller = require('./aluno/api-controller'),
-  server = app.listen(3000, function () {
+  server = app.listen(3000, '0.0.0.0', function () {
     var host = server.address().address;
     var port = server.address().port;
 

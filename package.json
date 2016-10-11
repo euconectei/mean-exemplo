@@ -19,5 +19,10 @@
     "cors": "^2.7.1",
     "express": "^4.13.3",
     "mongoose": "^4.1.9"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "nodemon": "^1.11.0",
+    "wiredep": "^4.0.0"
   }
 }

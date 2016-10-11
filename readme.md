@@ -4,8 +4,9 @@
 
 * MongoDB
 * Express
-* AngularJS
 * NodeJS
+* Bower
+* Gulp
 
 ## Subir Servidor
 
@@ -17,6 +18,14 @@ $ nodemon api-server.js
 
 ```
 $ mongod
+```
+
+## Front-end
+
+### Baixar as dependências
+
+```
+$ bower install
 ```
 
 ## Acessar Aplicação

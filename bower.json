@@ -1,0 +1,37 @@
+{
+  "name": "ucb-mean",
+  "description": "Site para apresentação de AngularJS para alunos da UCB",
+  "main": "index.js",
+  "authors": [
+    "euconectei"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "AngularJS",
+    "UCB",
+    "alunos",
+    "palestra"
+  ],
+  "homepage": "https://github.com/euconectei/mean-exemplo",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "less": "^2.7.1",
+    "angular": "^1.5.8",
+    "angular-route": "^1.5.8"
+  },
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "dist/css/bootstrap.min.css",
+        "dist/js/bootstrap.min.js"
+      ]
+    }
+  }
+}
